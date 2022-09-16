@@ -18,8 +18,7 @@ nav {
   .mat-ripple.mat-tab-header-pagination.mat-tab-header-pagination-before {
     display: none !important;
   }
-
-  mat-tab-group {
-    overflow-y: scroll  !important;
+  .mat-tab-label-container {
+    overflow: auto !important;
   }
 }
