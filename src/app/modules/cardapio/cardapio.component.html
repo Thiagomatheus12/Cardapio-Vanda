@@ -1,0 +1,13 @@
+<mat-card>
+  <app-header></app-header>
+  <h1>Lanches</h1>
+  <div class="card-snack" *ngFor="let snack of data.snacks">
+    <span>{{snack.name}}</span>
+    <p>{{ snack.description }} </p>
+    <span>{{ snack.price | currency }}</span>
+</div>
+  <h1>Pastéis Tradicionais</h1>
+  <div *ngFor="let pastry of data.pastry">
+    <span>{{pastry.name}} {{pastry.price | currency}}</span>
+  </div>
+</mat-card>
