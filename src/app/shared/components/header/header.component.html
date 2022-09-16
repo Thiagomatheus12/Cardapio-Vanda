@@ -1,4 +1,11 @@
-<div>
-  <h1>Cardápio</h1>
-</div>
+<mat-toolbar color="primary">
+  <mat-toolbar-row class="justify-content-center">
+    <span>Cardápio</span>
+  </mat-toolbar-row>
 
+  <mat-toolbar-row class="nav-menu">
+    <mat-tab-group>
+      <mat-tab *ngFor="let link of links" [label]="link"></mat-tab>
+    </mat-tab-group>
+  </mat-toolbar-row>
+</mat-toolbar>

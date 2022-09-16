@@ -1,10 +1,25 @@
-div {
-  width: 100%;
+li {
+  list-style: none;
 }
 
-h1 {
+nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.875rem;
+  overflow-y: auto;
+}
+
+.nav-menu {
+  background: #fff;
+}
+
+::ng-deep {
+  .mat-ripple.mat-tab-header-pagination.mat-tab-header-pagination-after {
+    display: none !important;
+  }
+  .mat-ripple.mat-tab-header-pagination.mat-tab-header-pagination-before {
+    display: none !important;
+  }
+
+  mat-tab-group {
+    overflow-y: scroll  !important;
+  }
 }

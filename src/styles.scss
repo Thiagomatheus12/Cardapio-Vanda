@@ -2,3 +2,11 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.justify-content-center {
+  justify-content: center;
+}
+
+::ng-deep {
+  .mat-tab-header-pagination.mat-tab-header-pagination-disabled {     display: none !important; }
+}

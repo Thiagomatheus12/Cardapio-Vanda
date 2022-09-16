@@ -45,6 +45,10 @@ export class CardapioComponent implements OnInit {
     ]
   }
 
+  itens = [
+    "Lanches", "Pastéis", "Pastéis Especiais", "Porções", "Bebidas",
+  ]
+
   constructor() { }
 
   ngOnInit(): void {

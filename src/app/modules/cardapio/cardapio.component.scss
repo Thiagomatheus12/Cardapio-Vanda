@@ -1,19 +1,15 @@
 mat-card {
-  background: var(--primary-color);
-  color: #FFF;
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-.card-snack {
+mat-card {
   border-radius: 4px;
-  background: rgba(249, 69, 186, 0.412);
   padding: 0.75rem;
   margin-bottom: 1rem;
 }
 
 h1 {
-  color: yellow;
   font-size: x-large;
 }
 
