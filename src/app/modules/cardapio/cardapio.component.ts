@@ -45,9 +45,15 @@ export class CardapioComponent implements OnInit {
     ]
   }
 
-  itens = [
-    "Lanches", "Pastéis", "Pastéis Especiais", "Porções", "Bebidas",
-  ]
+  itens = {
+    "data": [
+      {"name": "Lanches"},
+      {"name": "Pastéis"},
+      {"name": "Pastéis Especiais"},
+      {"name": "Porções"},
+      {"name": "Bebidas"}
+    ]
+  }
 
   constructor() { }
 

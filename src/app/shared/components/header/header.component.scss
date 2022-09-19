@@ -9,16 +9,15 @@ nav {
 
 .nav-menu {
   background: #fff;
+  overflow: hidden;
+  overflow-x: auto;
 }
 
-::ng-deep {
-  .mat-ripple.mat-tab-header-pagination.mat-tab-header-pagination-after {
-    display: none !important;
-  }
-  .mat-ripple.mat-tab-header-pagination.mat-tab-header-pagination-before {
-    display: none !important;
-  }
-  .mat-tab-label-container {
-    overflow: auto !important;
+ul {
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+    }
   }
 }
