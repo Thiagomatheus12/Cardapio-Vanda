@@ -1,16 +1,13 @@
-li {
-  list-style: none;
-}
-
-nav {
-  display: flex;
-  overflow-y: auto;
-}
-
 .nav-menu {
   background: #fff;
   overflow: hidden;
   overflow-x: auto;
+}
+
+mat-toolbar {
+  z-index: 301;
+  top: -1px;
+  position: fixed;
 }
 
 ul {
