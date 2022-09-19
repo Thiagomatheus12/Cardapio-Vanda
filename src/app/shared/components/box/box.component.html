@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+<mat-card *ngFor="let datas of dadosProdutos[0]">
+  <div [ngClass]="{'container-active': !active, 'container': !active}">
+    <span *ngIf="!active">{{datas.name}} - </span>
+    <span *ngIf="active">{{datas.name}}</span>
+    <p>{{ datas.description }} </p>
+    <strong>{{ datas.price | currency }}</strong>
+  </div>
+</mat-card>

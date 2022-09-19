@@ -14,10 +14,13 @@ nav {
 }
 
 ul {
-  li {
-    list-style: none;
-    a {
-      text-decoration: none;
-    }
+}
+li {
+  list-style: none;
+  a {
+    text-decoration: none;
   }
+}
+:first-child {
+  padding-left: 0;
 }

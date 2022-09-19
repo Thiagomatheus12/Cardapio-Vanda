@@ -1,13 +1,29 @@
 <app-header [links]="itens"></app-header>
 <mat-card>
-  <h1>Lanches</h1>
-  <mat-card *ngFor="let snack of data.snacks">
-    <span>{{snack.name}}</span>
-    <p>{{ snack.description }} </p>
-    <strong>{{ snack.price | currency }}</strong>
+  <app-box title="Lanches" [data]="data.snacks"></app-box>
+  <app-box title="Adicione no seu lanche" [data]="data.snacksExtras" [active]="false"></app-box>
+  <app-box title="Pastéis Tradicionais" [data]="data.pastry" [active]="false"></app-box>
+  <app-box title="Pastéis Especiais" [data]="data.specialPastries" [active]="false"></app-box>
+
+  <h1>Adicione no seu lanche</h1>
+  <mat-card *ngFor="let snackExtra of data.snacksExtras">
+    <span>{{snackExtra.name}}</span> <strong>{{ snackExtra.price | currency }}</strong>
   </mat-card>
+
+
   <h1>Pastéis Tradicionais</h1>
-  <div *ngFor="let pastry of data.pastry">
+  <mat-card *ngFor="let pastry of data.pastry">
     <span>{{pastry.name}} <strong> {{pastry.price | currency}}</strong></span>
-  </div>
+  </mat-card>
+
+  <h1>Pastéis Especiais</h1>
+  <mat-card *ngFor="let pastry of data.pastry">
+    <span>{{pastry.name}} <strong> {{pastry.price | currency}}</strong></span>
+  </mat-card>
+
+  <h1>Bebidas</h1>
+  <mat-card *ngFor="let drink of data.drinks">
+    <span>{{drink.name}}  <strong> {{drink.price | currency}}</strong></span>
+    <p>{{drink.description}}</p>
+  </mat-card>
 </mat-card>
