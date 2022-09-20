@@ -47,6 +47,7 @@ export class CardapioComponent implements OnInit {
         { "name": "Fanta Laranja 2 Litros", "description": "", "price": 12.00 },
         { "name": "Coca-Cola 2 Litros", "description": "", "price": 12.00 },
         { "name": "Coca-Cola Zero 2 Litros", "description": "", "price": 12.00 },
+        { "name": "Kuat 2 Litros", "description": "", "price": 7.00 },
         { "name": "Brahma 350ML", "description": "", "price": 5.00 },
         { "name": "Brahma Duplo Malte 350ML", "description": "", "price": 6.00 },
         { "name": "Skol 350ML", "description": "", "price": 5.00 },

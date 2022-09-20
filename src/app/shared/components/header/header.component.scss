@@ -16,6 +16,11 @@ li {
   list-style: none;
   a {
     text-decoration: none;
+    color: rgb(39, 39, 39) ;
+  }
+  :visited {
+    color: rgb(39, 39, 39);
+    text-decoration:none;
   }
 }
 :first-child {
